@@ -9,12 +9,7 @@ import GoogleProvider from "next-auth/providers/google";
 
 import { env } from "~/env";
 import { db } from "~/server/db";
-import {
-  accounts,
-  sessions,
-  users,
-  verificationTokens,
-} from "~/server/db/schema";
+import { accounts, sessions, users, verificationTokens } from './db/schema/users';
 
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`
